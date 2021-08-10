@@ -82,20 +82,18 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/recycler_horizontal" />
 
-                <Button
+                <TextView
                     android:id="@+id/button"
                     style="@style/Widget.MaterialComponents.Button.TextButton"
-                    android:layout_width="0dp"
-                    android:layout_height="32dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="2dp"
                     android:layout_marginEnd="5dp"
-                    android:text="View All"
+                    android:drawableEnd="@drawable/ic_baseline_navigate_next_24"
+                    android:text="Play All"
                     android:textAllCaps="false"
                     android:textColor="@color/singer_name"
                     android:textSize="11sp"
-                    app:icon="@drawable/ic_baseline_navigate_next_24"
-                    app:iconGravity="textEnd"
-                    app:iconPadding="0dp"
-                    app:iconTint="@color/singer_name"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/textView2" />
 

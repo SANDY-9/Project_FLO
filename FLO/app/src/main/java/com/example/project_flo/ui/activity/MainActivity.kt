@@ -1,5 +1,6 @@
 package com.example.project_flo.ui.activity
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
@@ -18,6 +19,9 @@ class MainActivity : AppCompatActivity() {
         with(binding) {
             recyclerVertical.adapter = VerticalListAdapter(setDataVertical())
             recyclerHorizontal.adapter = HorizontalListAdapter(setDataHorizontal())
+            button.setOnClickListener {
+                startActivity(Intent(this@MainActivity, PlayActivity::class.java))
+            }
         }
     }
 
